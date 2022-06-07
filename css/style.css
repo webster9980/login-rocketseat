@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(8, 8, 8);
+}
+
+.logomarca{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+    background-color: #24221F;
+    border-radius: 4px;
+}
+
+.titulo-login{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    font-style: SemiBold;
+}
+
+.card >h1{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #D4CCB6;
+    display: flex;
+    align-items: center;
+}
+
+.sub-titulo{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #AFB6C2;
+    font-style: Medium;
+}
+ .textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textfield{
+    color: #AFB6C2;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.textfield >label{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;    
+}
+
+.textfield >input{
+    border: 1px solid #868686;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #24221F;
+    box-sizing: border-box;
+}
+
+.textfield >input::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    font-family: 'Roboto' , sans-serif;
+    color: #A9AFB9;
+}
+
+.textfield >input:focus{
+    border: 2px solid #FFC632;
+} 
+
+.check-in{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.check-in input:checked{
+    background-image: url(../images/check.svg);
+    background-color: #FFC632 !important;
+}
+
+#forgot-link{
+    color: #FFC632;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.check-in >input{
+    border-radius: 4px;
+    border: 1px solid #868686;
+}
+
+.check-in >label{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    color: #A9AFB9;
+}
+
+.check-in >a{
+    color: #FFC632;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.btn-form{
+    background: #FFC632;
+    padding: 12px 24px 12px 24px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #473404;
+}
+
+#label-inferior{
+    color: #FFC632;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center; 
+    margin-top: 10px;
+}
+
+#label-inferior , #link-inferior{
+    font-family: 'Poppins', sans-serif;
+}
+
+#link-inferior{
+    color: #FFC632;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.content-right{
+    width: 50vw;
+    height: 100vh;
+    background-image: url(../images/side-image.jpg);
+    background-position: center;
+}
+
+@media (max-width: 1000px) {
+    .content-right{
+        display: none;
+    }
+
+    .content-left{
+        width: 100vw;
+    }
+
+    .card{
+        background-color: rgb(8, 8, 8);
+    }
+}
+
+@media (max-width: 600) {
+    .card{
+        width: 70%;
+    }
+}
+
+@media (max-width: 530) {
+    .card{
+        width: 100%;
+        padding: 40px 0px;
+    }
+}
